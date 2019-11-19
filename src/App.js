@@ -63,7 +63,6 @@ function App() {
         authenticated ? (
           <div style={profileStyle}>
             <img src={profile.picture}
-                 height={20}
                  alt='user profile'
             />
             <span>{profile.displayName}</span>
