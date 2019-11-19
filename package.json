@@ -1,15 +1,34 @@
 {
-  "name": "auth-boilerplate",
+  "name": "identity-boilerplate",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "keywords": [
+    "reshuffle",
+    "react",
+    "blank",
+    "start",
+    "fullstack"
+  ],
   "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.2.0"
+    "@reshuffle/code-transform": "^0.1.0",
+    "@reshuffle/db": "^0.5.4",
+    "@reshuffle/fetch-runtime": "^0.1.0",
+    "@reshuffle/local-proxy": "^0.3.1",
+    "@reshuffle/passport": "0.0.4",
+    "@reshuffle/react-auth": "^0.1.2",
+    "@reshuffle/server-function": "^0.2.1",
+    "eslint": "^5.16.0",
+    "eslint-config-react-app": "^5.0.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "express": "^4.17.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "cross-env EXTEND_ESLINT=true react-scripts start",
+    "build": "cross-env EXTEND_ESLINT=true react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -27,5 +46,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "prettier": "^1.19.1",
+    "stylelint": "^12.0.0",
+    "stylelint-config-standard": "^19.0.0"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "singleQuote": true,
+    "jsxSingleQuote": true
   }
 }
