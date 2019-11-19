@@ -26,6 +26,10 @@ const profileStyle = {
   flexDirection: 'column',
 }
 
+const linkStyle = {
+  fontSize: '30px',
+};
+
 function ContentWrapper(props) {
   return (
     <div style={wrapperStyle}>
@@ -63,10 +67,10 @@ function App() {
                  alt='user profile'
             />
             <span>{profile.displayName}</span>
-            <a href={getLogoutURL()}>Logout</a>
+            <a style={linkStyle} href={getLogoutURL()}>Logout</a>
           </div>
         ) : (
-          <a href={getLoginURL()}>Login</a>
+          <a style={linkStyle} href={getLoginURL()}>Login</a>
         )
       }
     </ContentWrapper>
