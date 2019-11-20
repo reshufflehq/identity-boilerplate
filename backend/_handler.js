@@ -3,7 +3,7 @@ import { defaultHandler } from '@reshuffle/server-function';
 import { authRouter } from '@reshuffle/passport';
 
 const app = express();
-app.use('/', authRouter());
+app.use(authRouter());
 
 // Example of accessing a user
 //
