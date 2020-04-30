@@ -1,3 +1,5 @@
+# We have terminated the backend for this project.  Old Reshuffle projects can no longer be deployed.
+
 This is a Reshuffle template app which demonstrates basic usage of Reshuffle Identity. To learn more about Reshuffle Identity, [check out the docs](dev.reshuffle.app/identity).
 
 > Note: Reshuffle is built on top of Create React App
